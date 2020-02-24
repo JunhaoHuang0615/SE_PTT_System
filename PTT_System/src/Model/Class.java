@@ -1,5 +1,5 @@
 package Model;
 
 public class Class {
-	private int classNo;
+	private int classID;
 }

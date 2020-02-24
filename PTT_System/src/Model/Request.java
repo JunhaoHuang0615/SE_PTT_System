@@ -4,8 +4,9 @@ public class Request {
 	//============================================
 	//=============== Attributes ================
 	//============================================
-	private static int ID; // this will automatically increase when a request is generated.
+	private static int ID=0; // this will automatically increase when a request is generated.
 	private int requestId;
+	private int classId;
 	private int NumOfTeacher;
 	private int flag = 0; //if the flag is 0, this means this request haven't been checked by PTT director
 							// 1 means accepted
@@ -40,9 +41,6 @@ public class Request {
 	public int getRequestId() {
 		return requestId;
 	}
-	public void setRequestId(int requestId) {
-		this.requestId = requestId;
-	}
 	public int getNumOfTeacher() {
 		return NumOfTeacher;
 	}
@@ -65,6 +63,23 @@ public class Request {
 	
 	public void requestRejected() {
 		this.flag = 2;
+	}
+	
+	public String showDetails() {
+		String outcome = "";
+		outcome += "RequestID: " + requestId + "\n";
+		outcome += "Number_of_Teacher: " + NumOfTeacher + "\n";
+		outcome += "Status: ";
+		if(flag == 0) {
+			outcome += "undisposed";
+		}
+		else if(flag == 1) {
+			outcome += "accepted";
+		}
+		else if(flag == 2) {
+			outcome += "rejected";
+		}
+		return outcome;
 	}
 	
 
