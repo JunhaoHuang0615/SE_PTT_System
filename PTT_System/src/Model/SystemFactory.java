@@ -10,24 +10,34 @@ public class SystemFactory {
 	
 	//create Request
 	
-	public Request createRequest(int NumOfTeacher,int requestid) {
+	public Class createClass(int classID,int numOfStudent) {
 		
-		return new Request(NumOfTeacher,requestid);
-		
-	}
-	
-	public Request createRequest(int NumOfTeacher) {
-		
-		return new Request(NumOfTeacher);
+		return new Class(classID,numOfStudent);
 		
 	}
 	
-	
-	//create Request list
-	public List_Of_Request createRequestList() {
+	public Request createRequest(int numOfTeacher, int classId, String requiredSkill) {
 		
-		return new List_Of_Request();
+		return new Request(numOfTeacher,classId,requiredSkill);
+		
 	}
 	
+	public Teacher createTeacher(int teacherID,String name,String skill,String avaliableTime) {
+		
+		return new Teacher(teacherID,name,skill,avaliableTime);
+		
+	}
 	
+	public User createUser(int userType,String name) {
+		if(userType == 1) {
+			return new Class_Director(name);
+		}
+		else if(userType == 2){
+			return new PTT_Director(name);
+		}
+		else if(userType == 3) {
+			return new Admin(name);
+		}
+		return null;
+	}
 }

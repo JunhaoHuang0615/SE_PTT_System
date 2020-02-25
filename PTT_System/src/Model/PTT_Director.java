@@ -1,13 +1,26 @@
 package Model;
 
+import java.util.ArrayList;
+
 public class PTT_Director extends User{
 
-	
-	
 	
 	//================================================
 	//============= Methods ==========================
 	//================================================
+	
+	
+	public PTT_Director(String name) {
+		super(name);
+	}
+
+	public ArrayList<Request> checkRequirement(List_Of_Request requestList) {
+		return requestList.getUndisposedList();
+	}
+	
+	public ArrayList<Request> checkApproved(List_Of_Request requestList){
+		return requestList.getAcceptedList();
+	}
 	
 	//Want to accept a request
 	/***
@@ -26,4 +39,5 @@ public class PTT_Director extends User{
 	public void rejectRequest(Request rejectedRequest) {
 		rejectedRequest.requestRejected();
 	}
+	
 }
