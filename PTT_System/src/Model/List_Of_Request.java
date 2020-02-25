@@ -12,6 +12,17 @@ public class List_Of_Request implements Iterator<Request>,Iterable<Request>{
 	private ArrayList<Request> requests;
 	private int pos = 0;
 	
+	//============================================
+	//=============== Singleton Pattern ================
+	//============================================
+	
+	private List_Of_Request(){};
+	
+	private static List_Of_Request instance = new List_Of_Request(); 
+	
+	public static List_Of_Request getInstance(){
+		return instance;
+	}
 	
 	//============================================
 	//=============== Method =====================
