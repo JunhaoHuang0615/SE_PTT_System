@@ -26,24 +26,6 @@ public class List_Of_Class {
 	//============================================
 	//=============== Method =====================
 	//============================================
-	public void addToList(Class class1) {
-		classList.add(class1);
-	}
-	
-	//remove from list by class object
-	
-	public void removeFromList(Class class1) {
-		
-		classList.remove(class1);
-		
-	}
-	
-	//remove from list by request id
-	public void removeFromList(int classID) {
-		
-		classList.remove(classID);
-		
-	}
 	
 	//get Class by class id
 	public Class getRequest(int classID) {
@@ -51,12 +33,30 @@ public class List_Of_Class {
 		return classList.get(classID);
 	}
 
-	public ArrayList<Class> getClassList() {
-		return classList;
-	}
-	
-	
-	
-	
+    public void add(Class c) {
+        for (Class c1 : classList) {
+            if (c1.getClassID() == c.getClassID()) {
+                return;
+            }
+        }
+        classList.add(c);
+    }
+
+    public void remove(int classID){
+        for(Class c : classList){
+            if (c.getClassID() == classID){
+                classList.remove(c);
+                return;
+            }
+        }
+    }
+
+    public void remove(Class c) {
+        for (Class c1 : classList) {
+            if (c1.getClassID() == c.getClassID()) {
+                classList.remove(c);
+            }
+        }
+    }
 
 }

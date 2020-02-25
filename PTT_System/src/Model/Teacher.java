@@ -8,7 +8,7 @@ public class Teacher {
 	private String name;
 	private String skill;
 	private String avaliableTime;
-//	private int responsedClass;
+	private Request responsedClass;
 	
 	public Teacher(int teacherID,String name,String skill,String avaliableTime) {
 		
@@ -16,7 +16,7 @@ public class Teacher {
 		this.name = name;
 		this.skill = skill;
 		this.avaliableTime = avaliableTime;
-//		this.responsedClass = null;
+		this.responsedClass = null;
 		
 	}
 
