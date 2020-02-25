@@ -2,9 +2,11 @@ package Model;
 
 public class PTT_Director extends User{
 
-	
-	
-	
+	public PTT_Director(String name) {
+		super(name);
+	}
+
+
 	//================================================
 	//============= Methods ==========================
 	//================================================

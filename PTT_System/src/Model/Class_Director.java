@@ -1,6 +1,9 @@
 package Model;
 
 public class Class_Director extends User{
+	public Class_Director(String name) {
+		super(name);
+	}
 	//================================================
 	//============= Attributes========================
 	//================================================
