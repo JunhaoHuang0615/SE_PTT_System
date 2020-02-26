@@ -4,20 +4,27 @@ import java.io.PrintStream;
 
 public class Teacher {
 	
+	private static int ID;
 	private int teacherID;
 	private String name;
 	private String skill;
 	private String avaliableTime;
 	private Request responsedClass;
 	
-	public Teacher(int teacherID,String name,String skill,String avaliableTime) {
+	public Teacher(String name,String skill,String avaliableTime) {
 		
-		this.teacherID = teacherID;
+		
+		this.teacherID = ID;
 		this.name = name;
 		this.skill = skill;
 		this.avaliableTime = avaliableTime;
 		this.responsedClass = null;
+		ID++;
 		
+	}
+	
+	public String toWriter() {
+		return name+" "+skill+" "+avaliableTime;
 	}
 
 	public int getTeacherID() {

@@ -9,7 +9,8 @@ public class List_Of_Request implements Iterator<Request>,Iterable<Request>{
 	//=============== Attributes ================
 	//============================================
 	
-	private ArrayList<Request> requests;
+	private ArrayList<Request> requests = new ArrayList<Request>();
+
 	private int pos = 0;
 	
 	//============================================
@@ -28,6 +29,7 @@ public class List_Of_Request implements Iterator<Request>,Iterable<Request>{
 	//=============== Method =====================
 	//============================================
 	public void addToList(Request request) {
+		System.out.println("Request :"+ request.getRequestId()+ " added to list ");
 		requests.add(request);
 	}
 	
@@ -51,6 +53,12 @@ public class List_Of_Request implements Iterator<Request>,Iterable<Request>{
 		
 		return requests.get(requestid);
 	}
+	
+	//get list
+	public ArrayList<Request> getRequests() {
+		return requests;
+	}
+
 	
 	//return undisposed list
 	

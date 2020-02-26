@@ -21,6 +21,7 @@ public class List_Of_Teacher {
 
 	public void add(Teacher t) {
 		lot.add(t);
+		System.out.println("New Teacher added to list!");
 	}
 	
 	public void remove(Teacher t) {

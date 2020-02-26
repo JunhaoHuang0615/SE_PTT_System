@@ -16,6 +16,8 @@ public class List_Of_Class {
 	//=============== Singleton Pattern ================
 	//============================================
 	
+
+
 	private List_Of_Class() {};
 	
 	public static List_Of_Class getInstance(){
@@ -32,7 +34,11 @@ public class List_Of_Class {
 		
 		return classList.get(classID);
 	}
-
+	
+	public ArrayList<Class> getClassList() {
+		return classList;
+	}
+	
     public void add(Class c) {
         for (Class c1 : classList) {
             if (c1.getClassID() == c.getClassID()) {
@@ -40,6 +46,7 @@ public class List_Of_Class {
             }
         }
         classList.add(c);
+        System.out.println("New Class added to list!");
     }
 
     public void remove(int classID){

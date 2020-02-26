@@ -9,6 +9,10 @@ public class Class {
         this.classID = classID;
         this.numOfStudent = numOfStudent;
     }
+    
+    public String toWriter() {
+    	return classID+" "+numOfStudent;
+    }
 
     public int getClassID() {
         return classID;

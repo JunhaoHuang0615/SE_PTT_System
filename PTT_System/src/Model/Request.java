@@ -4,7 +4,7 @@ public class Request {
 	//============================================
 	//=============== Attributes ================
 	//============================================
-	private static int ID=0; // this will automatically increase when a request is generated.
+	private static int ID; // this will automatically increase when a request is generated.
 	private int requestId;
 	private int classId;
 	private int numOfTeacher;
@@ -25,12 +25,14 @@ public class Request {
 		
 	}
 	//if it doesn't pass id here, then it will automatically assigned
-	public Request(int numOfTeacher, int classId, String requiredSkill) {
+	public Request(int numOfTeacher, int classId,int flag, String requiredSkill) {
+		this.classId = classId;
 		this.requiredSkill = requiredSkill;
 		this.numOfTeacher = numOfTeacher;
 		this.requestId = ID;
+		this.flag = flag;
 		ID++;
-		
+		System.out.println("new request: "+ requestId+" numOfTeacher: " +numOfTeacher+" classId: " +classId+" requiredSkill: " +requiredSkill);
 	}
 	
 	//=======================================================
@@ -64,6 +66,11 @@ public class Request {
 
 	public void requestAccepted() {
 		this.flag = 1;
+	}
+	
+	public String toWriter() {
+		System.out.println("toWriter: "+numOfTeacher+" "+classId+" "+flag+" "+requiredSkill);
+		return numOfTeacher+" "+classId+" "+flag+" "+requiredSkill;
 	}
 	
 	public void requestRejected() {

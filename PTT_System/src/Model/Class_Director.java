@@ -32,6 +32,12 @@ public class Class_Director extends User{
 		return requestList.getUndisposedList();
 	}
 	
+	public void creatRequest(int classId,int numOfTeacher, String requiredSkill) {
+		
+		Request r = SystemFactory.createRequest(numOfTeacher, classId, 0, requiredSkill);
+		List_Of_Request.getInstance().addToList(r);
+	}
+	
 	
 
 }
