@@ -7,7 +7,7 @@ public class Test {
 		reader.readFromFile();
 		
 	    Class_Director cd = (Class_Director)SystemFactory.createUser(1, "JJ");
-	    cd.creatRequest(1, 3, "Game");
+	    cd.creatRequest(1, 3, "Game","Mon");
 	    
 		System.out.println(List_Of_Request.getInstance().getRequests().get(0).getClassId()+"-----------------------------------");
 		

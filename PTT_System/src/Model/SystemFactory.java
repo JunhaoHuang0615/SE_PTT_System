@@ -16,9 +16,9 @@ public class SystemFactory {
 		
 	}
 	
-	public static Request createRequest(int numOfTeacher, int classId,int flag ,String requiredSkill) {
+	public static Request createRequest(int numOfTeacher, int classId,int flag ,String requiredSkill,String requiredTime) {
 		
-		return new Request(numOfTeacher,classId,flag,requiredSkill);
+		return new Request(numOfTeacher,classId,flag,requiredSkill,requiredTime);
 		
 	}
 	

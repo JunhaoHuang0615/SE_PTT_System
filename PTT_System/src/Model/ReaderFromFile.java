@@ -79,7 +79,7 @@ public class ReaderFromFile {
 	
 	public void newRequest(String temp) {
 		String[] split = temp.split(" ");
-		Request r = SystemFactory.createRequest(Integer.parseInt(split[0]), Integer.parseInt(split[1]),Integer.parseInt(split[2]), split[3]);
+		Request r = SystemFactory.createRequest(Integer.parseInt(split[0]), Integer.parseInt(split[1]),Integer.parseInt(split[2]), split[3],split[4]);
 		List_Of_Request.getInstance().addToList(r);
 	}
 	

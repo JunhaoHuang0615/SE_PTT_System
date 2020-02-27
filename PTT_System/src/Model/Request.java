@@ -8,6 +8,7 @@ public class Request {
 	private int requestId;
 	private int classId;
 	private int numOfTeacher;
+	private String requiredTime;
 	private int flag = 0; //if the flag is 0, this means this request haven't been checked by PTT director
 							// 1 means accepted
 							// 2 means rejected
@@ -25,12 +26,13 @@ public class Request {
 		
 	}
 	//if it doesn't pass id here, then it will automatically assigned
-	public Request(int numOfTeacher, int classId,int flag, String requiredSkill) {
+	public Request(int numOfTeacher, int classId,int flag, String requiredSkill,String requiredTime) {
 		this.classId = classId;
 		this.requiredSkill = requiredSkill;
 		this.numOfTeacher = numOfTeacher;
 		this.requestId = ID;
 		this.flag = flag;
+		this.requiredTime = requiredTime;
 		ID++;
 		System.out.println("new request: "+ requestId+" numOfTeacher: " +numOfTeacher+" classId: " +classId+" requiredSkill: " +requiredSkill);
 	}
@@ -69,8 +71,8 @@ public class Request {
 	}
 	
 	public String toWriter() {
-		System.out.println("toWriter: "+numOfTeacher+" "+classId+" "+flag+" "+requiredSkill);
-		return numOfTeacher+" "+classId+" "+flag+" "+requiredSkill;
+		System.out.println("toWriter: "+numOfTeacher+" "+classId+" "+flag+" "+requiredSkill+" "+requiredTime);
+		return numOfTeacher+" "+classId+" "+flag+" "+requiredSkill+" "+requiredTime;
 	}
 	
 	public void requestRejected() {
