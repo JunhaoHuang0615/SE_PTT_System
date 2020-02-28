@@ -65,11 +65,19 @@ public class Request {
 	//=============== Method =====================
 	//============================================
 	
+	
+	public String showUPDetails() {
+		return "<html>Request ID: "+ requestId+"<br>Num Of Teacher: " +numOfTeacher+"<br> Class ID: " +classId
+				+"<br> Required Skill: " +requiredSkill+"<br> Required Time: " +requiredTime + "</html>";
+	}
 
 	public void requestAccepted() {
 		this.flag = 1;
 	}
 	
+	public String toString() {
+		return "Request: " + requestId;
+	}
 	public String toWriter() {
 		System.out.println("toWriter: "+numOfTeacher+" "+classId+" "+flag+" "+requiredSkill+" "+requiredTime);
 		return numOfTeacher+" "+classId+" "+flag+" "+requiredSkill+" "+requiredTime;
