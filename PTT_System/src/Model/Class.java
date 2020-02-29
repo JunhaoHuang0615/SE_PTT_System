@@ -22,4 +22,8 @@ public class Class {
         return numOfStudent;
     }
 
+    @Override
+    public String toString() {
+    	return "class ID: " + classID;
+    }
 }

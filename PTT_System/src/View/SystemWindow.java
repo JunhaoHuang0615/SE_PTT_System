@@ -2,10 +2,13 @@ package View;
 
 import javax.swing.JFrame;
 
-public class SystemWindow extends JFrame{
+import Controller.Controller;
 
+public class SystemWindow extends JFrame{
+	
+	private Controller controller= new Controller();
 	private int unitPixel = 20;
-	private InnerPanel ip = new InnerPanel();
+	private InnerPanel ip = new InnerPanel(controller);
 	
 	public SystemWindow() {
 		

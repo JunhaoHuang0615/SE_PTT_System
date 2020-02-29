@@ -12,27 +12,22 @@ public class Request {
 							// 1 means accepted
 							// 2 means rejected
 	private String requiredSkill;
+	private String requiredTime;
 	
 	//============================================
 	//=============== Constructor ================
 	//============================================
 	
-	public Request(int numOfTeacher, int requestId) {
-		
-		this.numOfTeacher = numOfTeacher;
-		this.requestId = requestId;
-		ID++;
-		
-	}
+
 	//if it doesn't pass id here, then it will automatically assigned
-	public Request(int numOfTeacher, int classId,int flag, String requiredSkill) {
+	public Request(int numOfTeacher, int classId,int flag, String requiredSkill, String requiredTime) {
 		this.classId = classId;
 		this.requiredSkill = requiredSkill;
 		this.numOfTeacher = numOfTeacher;
 		this.requestId = ID;
 		this.flag = flag;
+		this.requiredTime = requiredTime;
 		ID++;
-		System.out.println("new request: "+ requestId+" numOfTeacher: " +numOfTeacher+" classId: " +classId+" requiredSkill: " +requiredSkill);
 	}
 	
 	//=======================================================
@@ -81,6 +76,8 @@ public class Request {
 		String outcome = "";
 		outcome += "RequestID: " + requestId + "\n";
 		outcome += "Number_of_Teacher: " + numOfTeacher + "\n";
+		outcome += "Required Skill: " + requiredSkill + "\n";
+		outcome += "Required Time: "  + requiredTime + "\n";
 		outcome += "Status: ";
 		if(flag == 0) {
 			outcome += "undisposed";
@@ -93,6 +90,11 @@ public class Request {
 		}
 		return outcome;
 	}
+	@Override
+	public String toString() {
+		return "RequestID: "+requestId;
+	}
+
 	
 
 }

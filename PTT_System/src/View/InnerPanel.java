@@ -2,6 +2,7 @@ package View;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 import javax.swing.JLabel;
@@ -16,13 +17,13 @@ public class InnerPanel extends JPanel{
 	private JLabel subtitle;
 	private ArrayList<JPanel> panelArr;
 
-	public InnerPanel() {
+	public InnerPanel(ActionListener controller) {
 		
 		subtitle = new JLabel();
 		panelArr = new ArrayList<JPanel>();
 		
 		lv = new LoginView();
-		cdv = new CourseDirectorView();
+		cdv = new CourseDirectorView(controller);
 		av = new AdminView();
 		pdv = new PTTDirectorView();
 		
