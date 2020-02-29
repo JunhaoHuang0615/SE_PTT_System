@@ -1,0 +1,22 @@
+Teacher
+Nolan Game Mon
+Nolan Sport Tue
+Class
+1 30
+2 23
+Request
+3 1 1 Game Mon
+3 1 1 Game Mon
+5 1 1 math Tus
+5 1 1 math Tus
+5 1 1 math Tus
+5 1 1 math Tus
+5 1 1 math Tus
+5 1 1 math Tus
+5 1 1 math Tus
+5 0 0 Mon. Software_Enginnering
+100 0 0 Mon. Software_Enginnering
+100 1 0 Mon. Software_Enginnering
+9 1 0 Mon. Software_Enginnering
+20 1 0 Mon. Software_Enginnering
+100 2 0 Mon. Software_Enginnering

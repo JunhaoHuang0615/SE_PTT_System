@@ -1,3 +1,4 @@
+
 package View;
 
 import java.awt.BorderLayout;
@@ -20,3 +21,4 @@ public class LoginView extends JPanel{
 	}
 	
 }
+

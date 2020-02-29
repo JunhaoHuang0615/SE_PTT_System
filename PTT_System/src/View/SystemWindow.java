@@ -1,3 +1,4 @@
+
 package View;
 
 import javax.swing.JFrame;
@@ -6,16 +7,16 @@ import Controller.Controller;
 
 public class SystemWindow extends JFrame{
 	
-	private Controller controller= new Controller();
 	private int unitPixel = 20;
-	private InnerPanel ip = new InnerPanel(controller);
+	private InnerPanel ip;
 	
-	public SystemWindow() {
+	public SystemWindow(Controller controller) {
 		
 		this.setTitle("This System");
 		this.setSize(40 * unitPixel, 22 * unitPixel);
 		this.setLocation(40 * unitPixel, 22 * unitPixel);
 		this.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+		ip = new InnerPanel(controller);
 		
 		this.add(ip);
 		
@@ -27,3 +28,4 @@ public class SystemWindow extends JFrame{
 		return ip;
 	}
 }
+

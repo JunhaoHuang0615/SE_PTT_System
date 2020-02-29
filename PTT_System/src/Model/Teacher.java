@@ -47,5 +47,8 @@ public class Teacher {
 		ps.print(teacherID + " " + name + " " + skill + " " + avaliableTime + "\n");
 	}
 	
+	public String toString() {
+		return teacherID + " / " + name + " / " + skill + " / " + avaliableTime + "\n";
+	}
 	
 }
