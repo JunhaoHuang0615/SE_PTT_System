@@ -6,15 +6,23 @@ public class Admin extends User {
 	
 
 	
-public Admin(String name) {
-		super(name);
-	}
+	
 
 //============================================
 //=============== Constructor ================
 //============================================
 	
-
+	private static Admin instance;
+	private Admin() {
+		name = "Administrator";
+	}
+	
+	public static Admin getInstance() {
+		if(instance == null) {
+			instance = new Admin();
+		}
+		return instance;
+	}
 	
 	public ArrayList<Request> checkRequestList(List_Of_Request requestList) {
 		return requestList.getAcceptedList();	

@@ -4,13 +4,25 @@ import java.util.ArrayList;
 
 public class PTT_Director extends User{
 
-
+	private static PTT_Director instance;
+	private PTT_Director() {
+		name = "PTT_Director";
+	}
+	
+	public static PTT_Director getInstance() {
+		if(instance == null) {
+			instance = new PTT_Director();
+		}
+		return instance;
+	}
+	
+	
 	//================================================
 	//============= Methods ==========================
 	//================================================
 	
 	
-	public PTT_Director(String name) {
+	private PTT_Director(String name) {
 		super(name);
 	}
 
