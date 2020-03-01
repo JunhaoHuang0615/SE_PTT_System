@@ -1,4 +1,5 @@
 package View;
+import Controller.Controller;
 import Model.ReaderFromFile;
 
 public class ViewTest {
@@ -8,7 +9,9 @@ public class ViewTest {
 		ReaderFromFile reader = new ReaderFromFile("database.txt");
 		reader.readFromFile();
 		
+		
 		SystemWindow sw = new SystemWindow();
+		Controller.getController().setView(sw);
 		sw.getInnerPanel().showPDV();
 	}
 }

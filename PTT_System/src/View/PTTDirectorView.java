@@ -44,7 +44,8 @@ public class PTTDirectorView extends JPanel implements ListSelectionListener {
 			reqDetial = new JLabel();
 			
 			reqDetial.setText("where request detials showed");
-			reqList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+			approvedReqList.setBorder(BorderFactory.createTitledBorder("Approved Requests:"));
+			approvedReqList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 			approvedScrollPane = new JScrollPane(approvedReqList, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
 	                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 
@@ -56,8 +57,16 @@ public class PTTDirectorView extends JPanel implements ListSelectionListener {
 			
 		}
 		
+		public DataModel getAprvdReqArr() {
+			return aprvdReqArr;
+		}
+
 		public JLabel getDetialLabel() {
 			return reqDetial;
+		}
+		
+		public void updateList() {
+			approvedReqList.setModel(aprvdReqArr);
 		}
 	}
 	
@@ -89,8 +98,20 @@ public class PTTDirectorView extends JPanel implements ListSelectionListener {
 			}
 		}
 		
+		public void modelUpdate() {
+			removeAllElements();
+			arr.clear();
+			modelInit(flag);
+
+		}
+		
+		public boolean isEmpty() {
+			return arr.size() == 0? true:false;
+		}
+		
 		public Request get(int index) {
 			return arr.get(index);
+			
 		}
 	}
 	
@@ -106,12 +127,31 @@ public class PTTDirectorView extends JPanel implements ListSelectionListener {
 			btn2 = new JButton("Refuse");
 			
 			btn1.addActionListener(Controller.getController());
+			//System.out.println("add listener"+Controller.getController());
 			btn2.addActionListener(Controller.getController());
 			
 			this.setLayout(new GridLayout(2,1));
 			
 			this.add(btn1);
 			this.add(btn2);
+		}
+		
+		public JButton getApproveButton() {
+			return btn1;
+		}
+		
+		public JButton getRejectButton() {
+			return btn2;
+		}
+		
+		public void btnDisable() {
+			btn1.setEnabled(false);
+			btn2.setEnabled(false);
+		}
+		
+		public void btnEnable() {
+			btn1.setEnabled(true);
+			btn2.setEnabled(true);
 		}
 	}
 	
@@ -132,6 +172,14 @@ public class PTTDirectorView extends JPanel implements ListSelectionListener {
 		
 		public JLabel getDetialLabel() {
 			return p2.getDetialLabel();
+		}
+		
+		public Panel2 getP2() {
+			return p2;
+		}
+		
+		public Panel3 getP3() {
+			return p3;
 		}
 	}
 	
@@ -163,14 +211,39 @@ public class PTTDirectorView extends JPanel implements ListSelectionListener {
 	}
 	
 	public void updateView() {
-		
+		reqList.setModel(reqArr);
+		rightPanel.getP2().updateList();
+		if(reqArr.isEmpty()) {
+			rightPanel.getP3().btnDisable();
+		}
+		else {
+			rightPanel.getP3().btnEnable();
+		}
+	}
+	
+	public void updateModel() {
+		reqArr.modelUpdate();
+		rightPanel.getP2().getAprvdReqArr().modelUpdate();;
+	}
+	
+	public JList<Request> getReqList() {
+		return reqList;
+	}
+	
+	public RightPanel getRightPanel() {
+		return rightPanel;
 	}
 
 	@Override
 	public void valueChanged(ListSelectionEvent e) {
 		// TODO Auto-generated method stub
 		if(!e.getValueIsAdjusting()) {
+			if(reqList.getSelectedValue() != null) {
 			rightPanel.getDetialLabel().setText(reqList.getSelectedValue().showUPDetails());
+			}
+			else {
+				rightPanel.getDetialLabel().setText(" ");
+			}
 		}
 	}
 	

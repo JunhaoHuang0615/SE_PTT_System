@@ -39,6 +39,10 @@ public class InnerPanel extends JPanel{
 		
 	}
 	
+	public PTTDirectorView getPTTDirectorView() {
+		return pdv;
+	}
+	
 	
 	public void showLV() {
 		this.add(lv,BorderLayout.CENTER);

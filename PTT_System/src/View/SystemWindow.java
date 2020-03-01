@@ -1,5 +1,6 @@
 package View;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class SystemWindow extends JFrame{
@@ -22,5 +23,21 @@ public class SystemWindow extends JFrame{
 	
 	public InnerPanel getInnerPanel() {
 		return ip;
+	}
+	
+	public JButton getApproveBtn() {
+		return ip.getPTTDirectorView().getRightPanel().getP3().getApproveButton();
+	}
+	
+	public int getSelectedIndex() {
+		return ip.getPTTDirectorView().getReqList().getSelectedIndex();
+	}
+	
+	public PTTDirectorView getPTTDirectorView() {
+		return ip.getPTTDirectorView();
+	}
+	
+	public JButton getRejectBtn() {
+		return ip.getPTTDirectorView().getRightPanel().getP3().getRejectButton();
 	}
 }
