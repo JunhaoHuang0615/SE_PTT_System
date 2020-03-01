@@ -8,15 +8,22 @@ public class Class_Director extends User{
 	//================================================
 	//============= Attributes========================
 	//================================================
-
-	
-	//================================================
-	//============= Methods ==========================
-	//================================================
-	
-	public Class_Director(String name) {
-		super(name);
+	private static Class_Director instance;
+	private Class_Director() {
+		name = "Class_Director";
 	}
+	
+	//================================================
+	//============= Constructor========================
+	//================================================
+	
+	public static Class_Director getInstance() {
+		if(instance == null) {
+			instance = new Class_Director();
+		}
+		return instance;
+	}
+	
 
 	//// Want to add teaching request to the request list
 	/***

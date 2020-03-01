@@ -9,6 +9,10 @@ public abstract class User {
 		this.name = name;
 		
 	}
+	
+	protected User() {
+		
+	}
 
 
     public String getName() {

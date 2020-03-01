@@ -22,6 +22,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
+import Controller.Controller;
 import Model.*;
 import Model.Class;
 
@@ -45,7 +46,7 @@ public class CourseDirectorView extends JPanel implements ListSelectionListener{
 	
 	JComboBox<String> skillBox;
 	
-	public CourseDirectorView(ActionListener controller) {
+	public CourseDirectorView() {
 		
 		Color bgColor = new Color(0, 255, 0);
 		this.setBackground(bgColor);
@@ -56,7 +57,7 @@ public class CourseDirectorView extends JPanel implements ListSelectionListener{
 		//========================================
 		
 		JPanel requestListJPanel = new JPanel();
-		requestListJPanel.setLayout(new GridLayout(2,1));
+		requestListJPanel.setLayout(new BorderLayout());
 		listModel = new DefaultListModel<Request>();
 		JLabel requestListLa = new JLabel("Request List");
 		
@@ -74,21 +75,21 @@ public class CourseDirectorView extends JPanel implements ListSelectionListener{
 		
 		JScrollPane scrollPane = new JScrollPane(requestList);
 		
-		requestListJPanel.add(requestListLa);
-		requestListJPanel.add(scrollPane);
+		requestListJPanel.add(requestListLa,BorderLayout.NORTH);
+		requestListJPanel.add(scrollPane,BorderLayout.CENTER);
 		this.add(requestListJPanel);
 		
 		//========================================
 		//==========Request List Panel============
 		//========================================
 		JPanel detailPan = new JPanel();
-		detailPan.setLayout(new GridLayout(2,1));
+		detailPan.setLayout(new BorderLayout());
 		textArea = new JTextArea();
 		textArea.setEditable(false);
 		textArea.setText(requestList.getSelectedValue().showDetails());
 		JLabel detailLabel = new JLabel("Request Detail");
-		detailPan.add(detailLabel);
-		detailPan.add(textArea);
+		detailPan.add(detailLabel,BorderLayout.NORTH);
+		detailPan.add(textArea,BorderLayout.CENTER);
 		this.add(detailPan);
 		
 		
@@ -140,10 +141,10 @@ public class CourseDirectorView extends JPanel implements ListSelectionListener{
 		inputPanel.add(skillBox);
 		
 		createButton = new JButton("Create");
-		createButton.addActionListener(controller);
+		createButton.addActionListener(Controller.getController());
 		
 		saveButton = new JButton("Save");
-		saveButton.addActionListener(controller);
+		saveButton.addActionListener(Controller.getController());
 		
 		inputPanel.add(createButton);
 		inputPanel.add(saveButton);
