@@ -28,16 +28,4 @@ public class SystemFactory {
 		
 	}
 	
-	public static User createUser(int userType,String name) {
-		if(userType == 1) {
-			return new Class_Director(name);
-		}
-		else if(userType == 2){
-			return new PTT_Director(name);
-		}
-		else if(userType == 3) {
-			return new Admin(name);
-		}
-		return null;
-	}
 }

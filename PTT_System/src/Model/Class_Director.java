@@ -8,15 +8,22 @@ public class Class_Director extends User{
 	//================================================
 	//============= Attributes========================
 	//================================================
-
-	
-	//================================================
-	//============= Methods ==========================
-	//================================================
-	
-	public Class_Director(String name) {
-		super(name);
+	private static Class_Director instance;
+	private Class_Director() {
+		super("Class_Director");
 	}
+	
+	//================================================
+	//============= Constructor========================
+	//================================================
+	
+	public static Class_Director getInstance() {
+		if(instance == null) {
+			instance = new Class_Director();
+		}
+		return instance;
+	}
+	
 
 	//// Want to add teaching request to the request list
 	/***
@@ -32,7 +39,7 @@ public class Class_Director extends User{
 		return requestList.getUndisposedList();
 	}
 	
-	public void creatRequest(int classId,int numOfTeacher, String requiredSkill,String requiredTime) {
+	public void createRequest(int classId,int numOfTeacher, String requiredSkill,String requiredTime) {
 		
 		Request r = SystemFactory.createRequest(numOfTeacher, classId, 0, requiredSkill,requiredTime);
 		List_Of_Request.getInstance().addToList(r);

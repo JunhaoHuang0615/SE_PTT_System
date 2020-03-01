@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="023a4106-f0bd-4697-9d82-b2eef053d5a3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="211" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectId" id="1YIDoQafFNgIwPT7N7OZLjzP0hu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/junit-4.12.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Model in PTT_SYSTEM">
+    <configuration name="ClassTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PTT_SYSTEM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.ClassTester" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="List_Of_ClassTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PTT_SYSTEM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.List_Of_ClassTester" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="List_Of_TeacherTester.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PTT_SYSTEM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.List_Of_TeacherTester" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Model in PTT_SYSTEM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PTT_SYSTEM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeacherTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PTT_SYSTEM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.TeacherTester" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Model in PTT_SYSTEM" />
+        <item itemvalue="JUnit.TeacherTester" />
+        <item itemvalue="JUnit.ClassTester" />
+        <item itemvalue="JUnit.List_Of_TeacherTester.test" />
+        <item itemvalue="JUnit.List_Of_ClassTester" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="023a4106-f0bd-4697-9d82-b2eef053d5a3" name="Default Changelist" comment="" />
+      <created>1582608555509</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582608555509</updated>
+      <workItem from="1582608556996" duration="1860000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1860000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="408" y="617" width="1718" height="1103" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1583122121778">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="408" y="617" width="1718" height="1103" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1583122121778" />
+    <state x="1158" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1582777636359">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1158" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1582777636359" />
+    <state x="985" y="461" key="FileChooserDialogImpl" timestamp="1582771187635">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="985" y="461" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1582771187635" />
+    <state width="2517" height="340" key="GridCell.Tab.0.bottom" timestamp="1583122245482">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="340" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1583122245482" />
+    <state width="2517" height="340" key="GridCell.Tab.0.center" timestamp="1583122245482">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="340" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1583122245482" />
+    <state width="2517" height="340" key="GridCell.Tab.0.left" timestamp="1583122245482">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="340" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1583122245482" />
+    <state width="2517" height="340" key="GridCell.Tab.0.right" timestamp="1583122245482">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="340" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1583122245482" />
+    <state width="2517" height="398" key="GridCell.Tab.1.bottom" timestamp="1583120297240">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="398" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1583120297240" />
+    <state width="2517" height="398" key="GridCell.Tab.1.center" timestamp="1583120297240">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="398" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1583120297240" />
+    <state width="2517" height="398" key="GridCell.Tab.1.left" timestamp="1583120297240">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="398" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1583120297240" />
+    <state width="2517" height="398" key="GridCell.Tab.1.right" timestamp="1583120297240">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="398" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1583120297240" />
+    <state width="2517" height="398" key="GridCell.Tab.2.bottom" timestamp="1583120297240">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="398" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1583120297240" />
+    <state width="2517" height="398" key="GridCell.Tab.2.center" timestamp="1583120297240">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="398" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1583120297240" />
+    <state width="2517" height="398" key="GridCell.Tab.2.left" timestamp="1583120297240">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="398" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1583120297240" />
+    <state width="2517" height="398" key="GridCell.Tab.2.right" timestamp="1583120297240">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="398" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1583120297240" />
+    <state x="791" y="295" key="SettingsEditor" timestamp="1582771192332">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="791" y="295" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1582771192332" />
+    <state x="1034" y="513" key="com.intellij.ide.util.TipDialog" timestamp="1582621400688">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1034" y="513" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1582621400688" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PTT_SYSTEM$Model_in_PTT_SYSTEM.ic" NAME="Model in PTT_SYSTEM Coverage Results" MODIFIED="1583122245436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/PTT_SYSTEM$List_Of_ClassTester.ic" NAME="List_Of_ClassTester Coverage Results" MODIFIED="1582773293817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
+  </component>
+</project>

@@ -1,4 +1,5 @@
 
+
 package View;
 
 import java.io.FileNotFoundException;
@@ -31,13 +32,12 @@ public class ViewTest {
 		}
 		
 		
-		Controller controller = new Controller(SystemFactory.createUser(1, "ClassDirector"));
+
 		
-		SystemWindow sw = new SystemWindow(controller);
-		
-		controller.setSystem(sw);
-		
-		sw.getInnerPanel().showCDV();
+		SystemWindow sw = new SystemWindow();
+		Controller.getController().setView(sw);
+		sw.getInnerPanel().showLGV();
+		//sw.getInnerPanel().showCDV();
 	}
 }
 

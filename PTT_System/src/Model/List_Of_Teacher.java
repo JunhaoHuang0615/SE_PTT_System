@@ -32,7 +32,7 @@ public class List_Of_Teacher {
 		return lot.get(teacherID);
 	}
 	
-	public ArrayList<Teacher> getTeachersByRequestl(String skill, String avaliableTime){
+	public ArrayList<Teacher> getTeachersByRequest(String skill, String avaliableTime){
 		ArrayList<Teacher> lor = new ArrayList<Teacher>();
 		for(Teacher t : lot) {
 			if(t.getSkill().equals(skill)&&t.getAvaliableTime().equals(avaliableTime))
