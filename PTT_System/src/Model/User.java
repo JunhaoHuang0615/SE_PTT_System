@@ -10,9 +10,9 @@ public abstract class User {
 		
 	}
 	
-	protected User() {
-		
-	}
+//	protected User() {
+//
+//	}
 
 
     public String getName() {

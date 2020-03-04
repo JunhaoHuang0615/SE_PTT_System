@@ -14,7 +14,7 @@ public class Admin extends User {
 	
 	private static Admin instance;
 	private Admin() {
-		name = "Administrator";
+		super("Administrator");
 	}
 	
 	public static Admin getInstance() {

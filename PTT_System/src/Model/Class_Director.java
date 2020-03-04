@@ -10,7 +10,7 @@ public class Class_Director extends User{
 	//================================================
 	private static Class_Director instance;
 	private Class_Director() {
-		name = "Class_Director";
+		super("Class_Director");
 	}
 	
 	//================================================
@@ -39,7 +39,7 @@ public class Class_Director extends User{
 		return requestList.getUndisposedList();
 	}
 	
-	public void creatRequest(int classId,int numOfTeacher, String requiredSkill,String requiredTime) {
+	public void createRequest(int classId,int numOfTeacher, String requiredSkill,String requiredTime) {
 		
 		Request r = SystemFactory.createRequest(numOfTeacher, classId, 0, requiredSkill,requiredTime);
 		List_Of_Request.getInstance().addToList(r);

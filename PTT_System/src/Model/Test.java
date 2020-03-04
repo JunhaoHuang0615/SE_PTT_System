@@ -6,8 +6,8 @@ public class Test {
 		ReaderFromFile reader = new ReaderFromFile("database.txt");
 		reader.readFromFile();
 		
-	    Class_Director cd = (Class_Director)SystemFactory.createUser(1, "JJ");
-	    cd.creatRequest(1, 3, "Game","Mon");
+	    Class_Director cd = Class_Director.getInstance(); // (Class_Director)SystemFactory.createUser(1, "JJ");
+	    cd.createRequest(1, 3, "Game","Mon");
 	    
 		System.out.println(List_Of_Request.getInstance().getRequests().get(0).getClassId()+"-----------------------------------");
 		

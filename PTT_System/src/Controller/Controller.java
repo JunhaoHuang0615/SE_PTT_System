@@ -51,7 +51,7 @@ public class Controller implements ActionListener, WindowListener{
 			
 			Map<String, String> inputInformation = view.getInnerPanel().getCourseDirectorView().getInformation();
 			
-			Class_Director.getInstance().creatRequest(Integer.parseInt(inputInformation.get("ClassID")), 
+			Class_Director.getInstance().createRequest(Integer.parseInt(inputInformation.get("ClassID")),
 						Integer.parseInt(inputInformation.get("NumTeacher")), inputInformation.get("RequiredTime"), 
 						inputInformation.get("RequiredSkill"));
 			
