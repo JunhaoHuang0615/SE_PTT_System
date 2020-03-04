@@ -1,33 +1,17 @@
 package Model;
 
 public class Test {
-	
-	public static void main(String args[]) {
-		
-//		AprovedReq ar1 = new AprovedReq(1,1,33);
-//		AprovedReq ar2 = new AprovedReq(2,2,35);
-//		AprovedReq ar3 = new AprovedReq(3,3,54);
-//		AprovedReq ar4 = new AprovedReq(4,4,39);
-//		
-//		ApprovedReqList arl = new ApprovedReqList();
-//		arl.add(ar1);
-//		arl.add(ar2);
-//		arl.add(ar3);
-//		arl.add(ar4);
-//		
-//		Admin ad = new Admin("Administrator");
-//		ad.check(arl);
-		
+
+	public static void main(String[] args) {
 		ReaderFromFile reader = new ReaderFromFile("database.txt");
 		reader.readFromFile();
 		
-	    Class_Director cd = (Class_Director)SystemFactory.createUser(1, "JJ");
-	    cd.creatRequest(1, 3, "Game","wed");
+	    Class_Director cd = Class_Director.getInstance(); // (Class_Director)SystemFactory.createUser(1, "JJ");
+	    cd.createRequest(1, 3, "Game","Mon");
 	    
 		System.out.println(List_Of_Request.getInstance().getRequests().get(0).getClassId()+"-----------------------------------");
 		
 		WriterToFile writer = new WriterToFile("database.txt");
 		writer.writeToFile();
-		}
-
+	}
 }
